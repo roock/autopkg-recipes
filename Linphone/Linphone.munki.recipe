@@ -13,7 +13,7 @@
         <key>URL</key>
         <string>http://www.linphone.org/downloads-for-desktop.html</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/Linphone</string>
+        <string>apps</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -26,6 +26,10 @@
             <string>Linphone</string>
             <key>name</key>
             <string>%NAME%</string>
+            <key>category</key>
+            <string>Networking</string>
+            <key>MUNKI_CATEGORY</key>
+            <string>Networking</string>
             <key>unattended_install</key>
             <true/>
         </dict>
@@ -43,10 +47,10 @@
             <string>MunkiImporter</string>
             <key>Arguments</key>
             <dict>
-                <key>pkg_path</key>
-                <string>Linphone.pkg</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
+                    <key>pkg_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
+                    <key>repo_subdirectory</key>
+                    <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
         </dict>
     </array>

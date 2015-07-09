@@ -18,7 +18,7 @@
         <string>>(?P&lt;url&gt;http://download-mirror.savannah.gnu.org/releases/linphone/.*?/macos/linphone-.*?.pkg)</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>3.8.0</string>
+    <string>0.2.0</string>
     <key>Process</key>
     <array>
         <dict>

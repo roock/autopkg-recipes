@@ -15,7 +15,7 @@
         <key>SEARCH_URL</key>
         <string>http://www.linphone.org/downloads-for-desktop.html</string>
         <key>SEARCH_PATTERN</key>
-        <string>>(?P&lt;url&gt;http://download-mirror.savannah.gnu.org/releases/linphone/.*?/macos/linphone-.*?.pkg)</string>
+        <string>linphone-(?P&lt;version&gt;[0-9.]+)\.pkg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
@@ -37,6 +37,8 @@
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
+                <key>url</key>
+                <string>http://download-mirror.savannah.gnu.org/releases/linphone/3.8.x/macos/linphone-%version%.pkg</string>
                 <key>filename</key>
                 <string>%NAME%.pkg</string>
             </dict>
